@@ -1,0 +1,242 @@
+.App{
+  flex-direction: column;
+  display: flex;
+  width: 100vmax;
+  background-color: beige;
+}
+
+.App-header {
+  padding: 1rem 0;
+  color: black;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  width: 14vmax;
+  align-self: center;
+}
+
+.App-header nav {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.App-header button {
+  padding: 0.5rem 0.75rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.App-header .active-nav-btn {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.App-header .inactive-nav-btn {
+  color: #d1d5db;
+  background-color: transparent;
+}
+
+.App-header .inactive-nav-btn:hover {
+  color: white;
+  background-color: #4b5563;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+.home-container {
+  width: 100%;
+  max-width: 48rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.home-container h1 {
+  font-size: 1.875rem;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.home-container p {
+  font-size: 1.125rem;
+  color: #4b5563;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.start-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 2rem;
+  background-color: #2563eb;
+  color: white;
+  border-radius: 9999px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.start-button:hover {
+  background-color: #1d4ed8;
+  transform: scale(1.05);
+}
+
+.calculator-container {
+  width: 100%;
+  max-width: 48rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.calculator-container h2 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #2563eb;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 0.25rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  padding-top: 0.5rem;
+}
+
+.calculate-btn,
+.clear-btn {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.calculate-btn {
+  background-color: #10b981;
+  color: white;
+}
+
+.calculate-btn:hover {
+  background-color: #059669;
+}
+
+.clear-btn {
+  background-color: #e5e7eb;
+  color: #374151;
+}
+
+.clear-btn:hover {
+  background-color: #d1d5db;
+}
+
+.result {
+  padding: 1.25rem;
+  border-top: 4px solid #3b82f6;
+  background-color: #eff6ff;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  margin-top: 1.5rem;
+  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+
+.result h3 {
+  font-size: 3.75rem;
+  font-weight: 800;
+  color: #1e40af;
+}
+
+.result p {
+  padding: 0.25rem 0.75rem;
+  font-weight: 700;
+}
+
+.result .text-yellow-600 { color: #d97706; }
+.result .bg-yellow-100 { background-color: #fef3c7; }
+.result .text-green-600 { color: #059669; }
+.result .bg-green-100 { background-color: #d1fae5; }
+.result .text-orange-600 { color: #ea580c; }
+.result .bg-orange-100 { background-color: #ffedd5; }
+.result .text-red-600 { color: #dc2626; }
+.result .bg-red-100 { background-color: #fee2e2; }
+
+@media (max-width: 768px) {
+  .App-header nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .App-header h1 {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  main {
+    padding: 1rem;
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .calculate-btn,
+  .clear-btn {
+    width: 100%;
+  }
+
+  .calculator-container,
+  .home-container {
+    padding: 1rem;
+  }
+}

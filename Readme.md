@@ -54,6 +54,8 @@ function App() {
 export default App
 ```
 
+Home.jsx:
+
 ```
 import { Link } from "react-router-dom";
 import "./App.css";
@@ -71,6 +73,8 @@ function Home() {
 }
 export default Home;
 ```
+
+Calculator.jsx:
 
 ```
 import { useState } from "react";
@@ -139,6 +143,11 @@ export default Calculator;
 
 ## OUTPUT
 
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/3a6fb4b8-2d29-44fc-b990-62d04ebbcf93" />
+
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/c20b6049-4a30-45d8-8bcb-5c1ebc52a965" />
+
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/ea7d3f11-9bad-4a8c-bd38-4aa8cbe6b738" />
 
 ## RESULT
 The program for creating BMI Calculator using React Router is executed successfully.
